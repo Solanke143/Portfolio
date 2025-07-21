@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+  }
+  
+  .left h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  .left h3 {
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* .right img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 80%;
+    border: 2px solid #ccc;
+  }
+  
+  section {
+    margin: 30px 0;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 90%;
+    object-fit: cover;
+    border: 3px solid #555;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  } */
+
+  .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .profile-pic {
+    width: 150px;        /* Adjust size as needed */
+    height: auto;        /* Keeps original aspect ratio */
+    object-fit: contain; /* Ensures the full image is visible */
+    border-radius: 250%;  /* Optional: circular image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+
+  #objective {
+    margin-top: 30px;
+  }
+  
+  #objective h2 {
+    color: #1e3a8a;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .objective-box {
+    background-color: #f0f4ff;
+    border-left: 5px solid #3b82f6;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  
+  .education-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .edu-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid #4a90e2;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex: 1 1 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .edu-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .edu-box h3 {
+    margin-bottom: 10px;
+    color: #2a2a2a;
+  }
+  
+  .skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .skills-tags span {
+    background-color: #e0f0ff;
+    color: #004c99;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease;
+  }
+  
+  .skills-tags span:hover {
+    background-color: #cce6ff;
+    cursor: default;
+  }
+  
+  section h2 {
+    color: #222;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+  }
+
+  .project-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .project-box {
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    border-left: 5px solid #4a90e2;
+    border-radius: 6px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .project-box h3 {
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .project-box p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  #extra-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .info-section {
+    background-color: #f9f9f9;
+    border-left: 5px solid #4a90e2;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .info-section h2 {
+    color: #1f2937;
+    margin-bottom: 10px;
+  }
+  
+  .info-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .info-section li {
+    padding: 5px 0;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .language-list li {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: 500;
+  }
+  
+  .contact-list li strong {
+    color: #111;
+  }
+  
+  
+  
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  footer {
+    margin-top: 40px;
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
